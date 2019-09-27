@@ -12,5 +12,7 @@ fredag d 27/9 - OO ArrayLists
 - Hundekennel
 - BookStore
 
+3) Øvelserne fra onsdag
+
 
 

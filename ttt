@@ -1,0 +1,144 @@
+package hundekennelcph;
+import java.util.ArrayList ;
+public class HundeKennelCPH2 {
+	public static void main(String[] args) {
+
+		// Vi kan ikke have en hund uden person
+		// lav en person (ejer)
+		Person svigerfar = new Person("Henning");
+
+		
+		// lav en hund
+		Hund minHund = new Hund("Woodie", 5);
+		Hund minHund2 = new Hund("Nuser", 3);
+		
+		System.out.println(minHund.getDogId());
+		System.out.println(minHund2.getDogId());
+		// hunden skal ha et fortløbende id (static metode)
+		// Hunden tildeles ejeren. Skal hunden kende sin ejer?
+		svigerfar.setHund(minHund);
+		svigerfar.setHund(minHund2);
+		
+		// print ejerens navn og hund
+		ArrayList<Hund> svigerHunde = svigerfar.getMineHunde();
+		for (Hund hund: svigerHunde) {
+			System.out.println(hund.getDogNavn());
+		}
+		// ejeren skal kunne have flere hunde (ArrayList)
+		// lav en ny hund
+		// Hunden tildeles ejeren. 
+		// print ejerens navn og hunde
+		// En hund må kun ejes af én person. 
+		// - så ejerens addHund-metode skal fjerne den hvis den er 
+		//   ejet af en anden person. Derfor skal hunden vide hvem
+		//   dens ejere er (setter og getter af Person i Hundeklassen)
+		
+		HundeBox box1 = new HundeBox(1);
+		HundeBox box2 = new HundeBox(2);
+		HundeBox box3 = new HundeBox(3);
+		Hund BUDDY = new Hund("BUDDY",2);
+		Hund MAX = new Hund("MAX",3);
+		Hund SADIE = new Hund("SADIE",4);
+		Hund LUCY = new Hund("LUCY",5);
+		Hund BAILEY = new Hund("BAILEY",6);
+		Hund DAISY = new Hund("DAISY",7);
+		Hund LUNA = new Hund("LUNA",8);
+		Hund CHARLIE = new Hund("CHARLIE",9);
+		Hund MAGGIE = new Hund("MAGGIE",10);
+		Hund MOLLY = new Hund("MOLLY",11);
+		Hund COOPER = new Hund("COOPER",0);
+		Hund GINGER = new Hund("GINGER",1);
+		Hund JACK = new Hund("JACK",2);
+		Hund WILLOW = new Hund("WILLOW",3);
+		Hund ABBY = new Hund("ABBY",4);
+		Hund BEAR = new Hund("BEAR",5);
+		Hund LILY = new Hund("LILY",6);
+		Hund DUKE = new Hund("DUKE",7);
+		Hund KODA = new Hund("KODA",8);
+		Hund ROCKY = new Hund("ROCKY",9);
+		Hund CHLOE = new Hund("CHLOE",10);
+		Hund KENAI = new Hund("KENAI",11);
+		Hund HARLEY = new Hund("HARLEY",0);
+		Hund DENALI = new Hund("DENALI",1);
+		Hund TOBY = new Hund("TOBY",2);
+		Hund JAKE = new Hund("JAKE",3);
+		Hund LOKI = new Hund("LOKI",4);
+		Hund RUBY = new Hund("RUBY",5);
+		Hund ROXY = new Hund("ROXY",6);
+		Hund LUCKY = new Hund("LUCKY",7);
+		Hund PENNY = new Hund("PENNY",8);
+		Hund RILEY = new Hund("RILEY",9);
+		Hund SHADOW = new Hund("SHADOW",10);
+		Hund SOPHIE = new Hund("SOPHIE",11);
+		Hund LOLA = new Hund("LOLA",0);
+		Hund ROSIE = new Hund("ROSIE",1);
+		Hund PEPPER = new Hund("PEPPER",2);
+		Hund COCO = new Hund("COCO",3);
+		Hund GUS = new Hund("GUS",4);
+		Hund LADY = new Hund("LADY",5);
+		Hund BANDIT = new Hund("BANDIT",6);
+		Hund GRACIE = new Hund("GRACIE",7);
+		Hund JASPER = new Hund("JASPER",8);
+		Hund PIPER = new Hund("PIPER",9);
+		Hund STELLA = new Hund("STELLA",10);
+		Hund YUKON = new Hund("YUKON",11);
+		Hund ZOEY = new Hund("ZOEY",0);
+		box3.addHund(BUDDY);
+		box1.addHund(MAX);
+		box2.addHund(SADIE);
+		box3.addHund(LUCY);
+		box1.addHund(BAILEY);
+		box2.addHund(DAISY);
+		box3.addHund(LUNA);
+		box1.addHund(CHARLIE);
+		box2.addHund(MAGGIE);
+		box3.addHund(MOLLY);
+		box1.addHund(COOPER);
+		box2.addHund(GINGER);
+		box3.addHund(JACK);
+		box1.addHund(WILLOW);
+		box2.addHund(ABBY);
+		box3.addHund(BEAR);
+		box1.addHund(LILY);
+		box2.addHund(DUKE);
+		box3.addHund(KODA);
+		box1.addHund(ROCKY);
+		box2.addHund(CHLOE);
+		box3.addHund(KENAI);
+		box1.addHund(HARLEY);
+		box2.addHund(DENALI);
+		box3.addHund(TOBY);
+		box1.addHund(JAKE);
+		box2.addHund(LOKI);
+		box3.addHund(RUBY);
+		box1.addHund(ROXY);
+		box2.addHund(LUCKY);
+		box3.addHund(PENNY);
+		box1.addHund(RILEY);
+		box2.addHund(SHADOW);
+		box3.addHund(SOPHIE);
+		box1.addHund(LOLA);
+		box2.addHund(ROSIE);
+		box3.addHund(PEPPER);
+		box1.addHund(COCO);
+		box2.addHund(GUS);
+		box3.addHund(LADY);
+		box1.addHund(BANDIT);
+		box2.addHund(GRACIE);
+		box3.addHund(JASPER);
+		box1.addHund(PIPER);
+		box2.addHund(STELLA);
+		box3.addHund(YUKON);
+		box1.addHund(ZOEY);
+		// lav tre hundeboxe med arraylist<hund> og id
+		// lav en masse hunde (shell)
+		// lav en masse addHund
+		// lav en søgefunktion på alder større end
+		// flyt hund til ny box
+
+		 
+
+	}
+	
+}
+

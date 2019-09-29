@@ -1,4 +1,3 @@
-package hundekennelcph;
 import java.util.ArrayList ;
 public class HundeKennelCPH2 {
 	public static void main(String[] args) {
@@ -19,19 +18,21 @@ public class HundeKennelCPH2 {
 		svigerfar.setHund(minHund);
 		svigerfar.setHund(minHund2);
 		
-		// print ejerens navn og hund
+		// print ejerens navn og hunde
 		ArrayList<Hund> svigerHunde = svigerfar.getMineHunde();
 		for (Hund hund: svigerHunde) {
 			System.out.println(hund.getDogNavn());
 		}
-		// ejeren skal kunne have flere hunde (ArrayList)
 		// lav en ny hund
 		// Hunden tildeles ejeren. 
-		// print ejerens navn og hunde
 		// En hund må kun ejes af én person. 
 		// - så ejerens addHund-metode skal fjerne den hvis den er 
 		//   ejet af en anden person. Derfor skal hunden vide hvem
 		//   dens ejere er (setter og getter af Person i Hundeklassen)
+                
+		// lav tre hundeboxe med arraylist<hund> og id
+		// lav en masse hunde (shell)
+		// lav en masse addHund
 		
 		HundeBox box1 = new HundeBox(1);
 		HundeBox box2 = new HundeBox(2);
@@ -130,9 +131,6 @@ public class HundeKennelCPH2 {
 		box2.addHund(STELLA);
 		box3.addHund(YUKON);
 		box1.addHund(ZOEY);
-		// lav tre hundeboxe med arraylist<hund> og id
-		// lav en masse hunde (shell)
-		// lav en masse addHund
 		// lav en søgefunktion på alder større end
 		// flyt hund til ny box
 
